@@ -1,0 +1,314 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr; /* Навігація в 1 колонку, контент в 3 колонки */
+    grid-template-rows: 100px 20px 1fr auto; /* Хедер 100px, контент займає доступний простір */
+    grid-template-areas: 
+        "header header"
+        "horizontal horizontal"
+        "nav content"
+        "footer footer";
+    gap: 10px; /* Відступ між сітковими областями */
+    height: 100vh; /* Висота контейнера для зайняття всього видимого простору */
+}
+
+header {
+    grid-area: header;
+    height: 80px;
+    display: flex;
+    border: 1px;
+    background: linear-gradient(120deg, #f6cbb4, 30%, #ffeec6);
+    box-shadow: 0px 4px 2px #d8d8f8;
+}
+
+div.grid-header-head-item a {
+    white-space: pre-line;
+    font-size: 2.3em;
+    font-family: OCR A Std, monospace;
+    text-decoration: none;
+}
+
+#registration-button {
+    text-align: center;
+    line-height: 130%;
+
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #EFBF4F;
+    cursor: pointer;
+    font-family: monaco, monospace;
+
+    border: 3px solid #DAA018;    
+    border-radius: 15px;
+
+    /*For hover*/
+    transition: transform .1s;
+}
+
+#registration-button:hover {
+    transform: scale(1.1);
+} 
+
+#registration-button a {
+    text-decoration: none;
+}
+
+nav#horizontal-menu {
+    grid-area: horizontal;
+    background-color: #FFFFFF;
+    border: #EAE9EB solid 2px;
+    box-shadow: 0px 2px 1px #D6D5D7;
+    text-align: center;
+}
+
+nav#left-menu {
+    grid-area: nav;
+    background-color: white;
+    border: 1px solid #DCDADE;
+}
+main {
+    grid-area: content;
+    background-color: white;
+    border: 1px solid #DCDADE;
+}
+footer {
+    grid-area: footer;
+    border-top: 1px solid #DCDADE;
+}
+
+nav#horizontal-menu > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav#horizontal-menu > ul > li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav#horizontal-menu > ul > li > a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition-property: background-color, color;
+    transition-duration: 0.5s, 0.1s;
+    transition-delay: 0s;
+    background-image: linear-gradient(#FFF9D1 0 0);
+    background-position: 0 100%;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition:
+        background-size 0.3s,
+        background-position 0s 0.3s;
+}
+
+nav#horizontal-menu > ul > li > a:hover {
+    color: #323232;
+    cursor: pointer;
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.main-element ul {
+    display: none;
+    list-style-type: none;
+    width: 100px;
+    position: absolute;
+    background-color: white;
+}
+
+.main-element ul li {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.main-element ul li a {
+    font-size: small;
+    color: #896A5D;
+    text-decoration: none;
+    font-size: larger;
+    transition: transform .2s;
+}
+
+.main-element ul li a:hover {
+    color: #E8BE02;
+}
+
+.main-element:hover ul {
+    display: block;
+}
+
+#left-menu ul
+
+#left-menu > a {
+    font-size: 25px;
+}
+
+#left-menu li {
+    list-style-type: none;
+}
+
+.filter {
+    overflow-y: auto;
+    height: 100px;
+}
+
+.element-filter {
+    cursor: pointer;
+}
+
+div#catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div#catalog div.item {
+    flex-basis: calc(25% - 20px);
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    flex: 0 0 auto;
+    box-shadow: 0 0 8px #555;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: color .2s, background-color .4s;
+    -moz-transition:    color .2s, background-color .4s;
+    -ms-transition:     color .2s, background-color .4s;
+    -o-transition:      color .2s, background-color .4s;
+    transition:         color .2s, background-color .4s;
+}
+
+div#catalog div.item div {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+}
+
+div#catalog div.item:hover {
+    background-color: #EFEBA9;
+    color: #E5B01A;
+}
+
+div#catalog div.item picture img {
+    height: 200px;
+    border: 1px gray solid;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+div#catalog div.item picture img:hover {
+    opacity: 1;
+    border: 1px gray dotted;
+}
+
+#buy-button {
+    width: 35px;
+    transition-duration: 0.5s, 0.1s;
+    transition-delay: 0s;
+    background-image: linear-gradient(#efd110 0 0);
+    background-position: 0 100%;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition:
+        background-size 0.3s,
+        background-position 0s 0.3s;
+}
+
+#buy-button:hover {
+    color: #323232;
+    cursor: pointer;
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#hamburger-checkbox {
+    display: none;
+}
+
+#hamburger-checkbox-filter {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.element-header-filter {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.footer-row {
+    display: flex;
+    margin-top: 40px;
+}
+
+.footer-col {
+    font-size: 24px;
+    padding-bottom: 50px;
+    margin-right: 10vh;
+    cursor: pointer;
+}
+
+.footer-col a {
+    -webkit-transition: color .2s;
+    -moz-transition:    color .2s;
+    -ms-transition:     color .2s;
+    -o-transition:      color .2s;
+    transition:         color .2s;
+}
+
+.footer-col a:hover {
+    color: #E5B01A;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 20px 100px auto auto; /* Хедер 100px, контент займає доступний простір */
+        grid-template-areas: 
+            "header"
+            "horizontal"
+            "nav"
+            "content" 
+            "footer";
+        gap: 1px; /* Відступ між сітковими областями */
+
+        label {
+            display: block;
+            font-size: 30px;
+            height: 80px;
+            width: 40px;
+            margin-right: 20px;
+            margin-left: 10px;
+            border: 1px;
+            cursor: pointer;
+            line-height: 80px;
+            text-align: center;
+        }
+          
+        nav#sliding-horizontal-menu a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav#horizontal-menu {
+            display: none;
+        }
+
+        nav#left-menu {
+            display: none;
+        }
+    }
+}

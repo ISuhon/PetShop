@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="grid-container">
+       <header class="grid-header-head">
+            <input type="checkbox" id="hamburger-checkbox">
+            <label class="hamburger" for="hamburger-checkbox">☰</label>
+            <div class="grid-header-head-item"><a href="index.html">PET
+                SHOP </a><img src="photo/paw.png" alt=""></div>
+            <div id="registration-button" onclick="location.href='registration.html';"><a>Sign Up</a></div>
+            
+        </header>
+        <nav id="horizontal-menu">
+            <ul>
+                <li class="main-element"><a>Dogs</a>
+                    <ul>
+                        <li><a href="dogs-feeding.html">Feeding</a></li>
+                        <li><a href="">Toys</a></li>
+                        <li><a href="">Drugs</a></li>
+                        <li><a href="">Houses and beds</a></li>
+                    </ul>
+                </li>
+                <li class="main-element"><a>Cats</a>
+                    <ul>
+                        <li><a href="dogs-feeding.html">Feeding</a></li>
+                        <li><a href="">Toys</a></li>
+                        <li><a href="">Drugs</a></li>
+                        <li><a href="">Houses and beds</a></li>
+                    </ul>
+                </li>
+                <li class="main-element"><a>Aquarium</a>
+                    <ul>
+                        <li><a href="">Feeding</a></li>
+                        <li><a href="">Aquariums</a></li>
+                        <li><a href="">Decorations</a></li>
+                        <li><a href="">Filters</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <input type="checkbox" id="hamburger-checkbox-filter">
+            <label class="hamburger" for="hamburger-checkbox-filter"><img src="photo/filter32px.png" alt="filter"></label>
+        <nav id="left-menu">
+            <a>Feeding for dogs</a>
+            <br>
+            <br>
+            <a class="element-header-filter">Producer</a>
+            <div class="filter">
+                <ul>
+                    <li>
+                        <label class="element-filter" for="royal-canin">Royal Canin</label>
+                        <input type="checkbox" id="royal-canin" value="0">
+                    </li>
+                    <li>
+                        <label class="element-filter" for="proplan">Proplan</label>
+                        <input type="checkbox" id="proplan" value="1">
+                    </li>
+                    <li>
+                        <label class="element-filter" for="acana">Acana</label>
+                        <input type="checkbox" id="acana" value="2">
+                    </li>
+                    <li>
+                        <label class="element-filter" for="premil">Premil</label>
+                        <input type="checkbox" id="premil" value="3">
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <br>
+            <a class="element-header-filter">Feeding type</a>
+            <div class="filter">
+                <ul>
+                    <li>
+                        <label class="element-filter" for="dry">Dry</label>
+                        <input type="checkbox" id="dry" value="0">
+                    </li>
+                    <li>
+                        <label cclass="element-filter" for="wet">Wet</label>
+                        <input type="checkbox" id="wet" value="1">
+                    </li>
+                    <li>
+                        <label class="element-filter" for="healthy">Healthy</label>
+                        <input type="checkbox" id="healthy" value="2">
+                    </li>
+                    <li>
+                        <label class="element-filter" for="special">Special</label>
+                        <input type="checkbox" id="special" value="3">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main><section>
+            
+            <h2>Feeding catalog</h2>
+            <div id="catalog">
+                <div class="item">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="./photo/proplan-feeding.webp">
+                        <img src="./photo/proplan-feeding.webp" alt="proplan-feeding">
+                    </picture>
+                      
+                    <div>Pro Plan Puppy Small&Mini Puppy Healthy Start Chicken</div>
+                    <div>5.99$</div>
+                    <div id="buy-button"><img src="photo/shopping-bag32px.png"></div>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="./photo/royal-canin-feeding.webp">
+                        <img src="./photo/royal-canin-feeding.webp" alt="royal-canin-feeding">
+                    </picture>
+                      
+                    <div>Royal Canin Mini Adult Dry</div>
+                    <div>15.99$</div>
+                    <div id="buy-button"><img src="photo/shopping-bag32px.png"></div>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="./photo/royal-canin-feeding2.webp">
+                        <img src="./photo/royal-canin-feeding2.webp" alt="royal-canin-feeding">
+                    </picture>
+                      
+                    <div>Royal Canin Mini Puppy Dry</div>
+                    <div>15.99$</div>
+                    <div id="buy-button"><img src="photo/shopping-bag32px.png"></div>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="./photo/royal-canin-feeding3.webp">
+                        <img src="./photo/royal-canin-feeding3.webp" alt="royal-canin-feeding">
+                    </picture>
+                      
+                    <div>Royal Canin X-Small Puppy Dry</div>
+                    <div>7.99$</div>
+                    <div id="buy-button"><img src="photo/shopping-bag32px.png"></div>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="./photo/proplan-feeding2.jpeg">
+                        <img src="./photo/proplan-feeding2.jpeg" alt="proplan-feeding">
+                    </picture>
+                      
+                    <div>Pro Plan Adult Medium Sensitive Digestion Lamb</div>
+                    <div>18.99$</div>
+                    <div id="buy-button"><img src="photo/shopping-bag32px.png"></div>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="./photo/proplan-feeding3.webp">
+                        <img src="./photo/proplan-feeding3.webp" alt="proplan-feeding">
+                    </picture>
+                      
+                    <div>Pro Plan Adult Medium Sensitive Digestion Lamb</div>
+                    <div>18.99$</div>
+                    <div id="buy-button"><img src="photo/shopping-bag32px.png"></div>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="./photo/purina.webp">
+                        <img src="./photo/purina.webp" alt="proplan-feeding">
+                    </picture>
+                      
+                    <div>Fruskies Active</div>
+                    <div>10.99$</div>
+                    <div id="buy-button"><img src="photo/shopping-bag32px.png"></div>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="./photo/proplan-feeding4.webp">
+                        <img src="./photo/proplan-feeding4.webp" alt="proplan-feeding">
+                    </picture>
+                      
+                    <div>Pro Plan Adult Medium OptiBalance Chicken</div>
+                    <div>16.99$</div>
+                    <div id="buy-button"><img src="photo/shopping-bag32px.png"></div>
+                </div>
+            </div>
+        </section></main>
+        <footer>
+            <div class="footer-row">
+                <div class="footer-col"><img src="photo/telephone.png" alt="">
+                    Phone
+                    <br>
+                    <a>099 999 99 99</a>
+                </div>
+            </div>
+            
+        </footer>
+      </div>
+</body>
+</html>
